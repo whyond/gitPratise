@@ -1,0 +1,36 @@
+git inti #初始化当前文件夹
+
+git config --global -l 
+git config --global -list 
+#查看全局配置信息
+
+git status #查看当前文件夹情况
+git add . #提交所有工作区文件至暂存区
+git commit -m '版本号' #把暂存区提交至版本库
+git log #查看版本号
+git reset --hard ' '  #回滚版本号
+git reflog #查看历史版本号
+git checkout '文件名' #工作区 回退到未修改
+git reset head '文件名' #把暂存区退回至工作区
+
+git branch #查看分支 master 为主
+git branch xxx #创建分支
+git checkout XXX #切换分支
+git merge 分支名 #合并分支 
+git branch -d 分支名 #删除分支 
+
+git remote add 别名称 htttp: #配置连接github地址 设置好后，别名 表示此地址
+git push  别名 分支名称 #推送至githu -u指默认
+git clone https地址 #获取代码库（第一次获取）
+
+git pull 别名 分支名称 #（再次获取代码库）
+git pull = 
+git fetch 别名 分支名 # 从远程拉入本地版本库 +
+git merge 别名/分支名 #合并版本库
+
+git 工作区，暂存区，版本库
+
+git rebase -i 版本号  #当前版本库合并指定版本库
+git rebase -i HEAD~序号 #当前版本库 合并至序号版本库 建议不要合并已提交仓库
+git rebase 分支 #
+
