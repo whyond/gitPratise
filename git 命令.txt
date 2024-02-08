@@ -34,3 +34,7 @@ git rebase -i 版本号  #当前版本库合并指定版本库
 git rebase -i HEAD~序号 #当前版本库 合并至序号版本库 建议不要合并已提交仓库
 git rebase 分支 #
 
+绑定beyond compare
+git config --local merge.tool bc4 #别名
+git config --local mergetool.path 'G:\Program Files\Beyond Compare 4' #路径
+git config --local mergetool.keepBackup false #是否备份
